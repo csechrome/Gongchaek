@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.login.LoginAuthActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/pretendard_semibold"
+            android:gravity="center"
+            android:letterSpacing="-0.046"
+            android:text="회원가입"
+            android:textColor="#0c202b"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/pretendard_medium"
+            android:letterSpacing="-0.012"
+            android:text="휴대폰으로 전송된"
+            android:textColor="#11202a"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/pretendard_bold"
+                android:letterSpacing="-0.012"
+                android:text="인증번호"
+                android:textColor="#11202a"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/pretendard_medium"
+                android:letterSpacing="-0.012"
+                android:text="를 확인해주세요"
+                android:textColor="#11202a"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_auth_num"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/item_round_6dp_stroke_gray"
+            android:digits="1234567890"
+            android:fontFamily="@font/pretendard_regular"
+            android:gravity="center_vertical"
+            android:hint="인증번호를 입력해주세요"
+            android:inputType="phone"
+            android:letterSpacing="-0.022"
+            android:maxLength="6"
+            android:paddingLeft="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#ababa8"
+            android:textSize="15sp">
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/layout_error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:src="@drawable/ic_dot_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/pretendard_semibold"
+                android:letterSpacing="-0.018"
+                android:text="인증번호를 다시 확인해주세요."
+                android:textColor="#f45d5d"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/item_round_6dp"
+            android:backgroundTint="#e9ebec"
+            android:enabled="false"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="인증번호 확인"
+            android:textColor="#acaca9"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

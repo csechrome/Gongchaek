@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_manual_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="206dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:letterSpacing="-0.031"
+        android:lineHeight="22sp"
+        android:text="쉽고 빠르게 집에 있는 모든 책들을\n등록할 수 있어요."
+        android:textColor="#11202a"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_manual_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_upload_manual_1" />
+
+</LinearLayout>

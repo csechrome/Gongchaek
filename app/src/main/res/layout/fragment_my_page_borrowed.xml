@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.tabmypage.MyPageBorrowedFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_mypage_borrowed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_book_my_page"/>
+
+</FrameLayout>

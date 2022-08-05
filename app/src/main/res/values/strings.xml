@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">공책</string>
+    <string name="term_1">안녕하세요. 약관 1입니다.</string>
+    <string name="term_2">안녕하세요. 약관 2입니다.</string>
+    <string name="term_3">안녕하세요. 약관 3입니다.</string>
+    <string name="login_help"><u>카카오 채널을 통해 문의</u></string>
+    <string name="upload_manual_0">쉽고 빠르게 집에 있는 모든 책들을\n등록할 수 있어요.</string>
+    <string name="upload_manual_1">지금 안 읽는 책이 있다면 내 책을\n다른 사람들에게 대여해줄 수 있어요.</string>
+    <string name="upload_manual_2">평소에 읽는 책들을 바탕으로\n취향에 딱 맞는 책을 추천해드려요.</string>
+    <string name="upload_hint_0">책장을 한 번에 스캔할 수 있어요.\n<b>한 장에 7~10권 정도가 적당해요.</b></string>
+    <string name="upload_hint_1"><b>책 표지</b>를 찍어서\n등록할 수도 있어요!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

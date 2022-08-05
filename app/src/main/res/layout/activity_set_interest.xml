@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.login.SetInterestActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:letterSpacing="-0.012"
+        android:text="어떤 분야의 책에 관심이 있나요?"
+        android:textColor="#11202a"
+        android:textSize="22sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/layout_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btn_category_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_1_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_2_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_3_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_4_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_5_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_6_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_7_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_8_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_9_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_10_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_11"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_11_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_12"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_12_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_13"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_13_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_14"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_14_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_15"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_15_blank" />
+
+            <ImageView
+                android:id="@+id/btn_category_16"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:src="@drawable/ic_category_16_blank" />
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/item_round_6dp"
+        android:backgroundTint="#e9ebec"
+        android:enabled="false"
+        android:fontFamily="@font/pretendard_semibold"
+        android:text="완료"
+        android:textColor="#acaca9"
+        android:textSize="15sp" />
+
+</LinearLayout>

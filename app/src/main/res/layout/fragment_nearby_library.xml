@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.tabhome.NearbyLibraryFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_nearby_library"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingLeft="13dp"
+        android:paddingTop="27dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="37dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_library_small" />
+
+</FrameLayout>

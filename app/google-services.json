@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "48889465132",
+    "firebase_url": "https://gongchaek-inc-default-rtdb.firebaseio.com",
+    "project_id": "gongchaek-inc",
+    "storage_bucket": "gongchaek-inc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48889465132:android:c529f34f75d6a0e07e0489",
+        "android_client_info": {
+          "package_name": "com.gongchaek.gongchaek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48889465132-j7bencqab94ls1k691a3m0nq3ilsp05r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gongchaek.gongchaek",
+            "certificate_hash": "ca56c228a9430226e211500d62efb5f5f11deabd"
+          }
+        },
+        {
+          "client_id": "48889465132-g12t0qtefdaaooopt6n8l6jqfl6ses0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcYvubnFHe50nc0sfEhISKh7VilX_i3qE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48889465132-g12t0qtefdaaooopt6n8l6jqfl6ses0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

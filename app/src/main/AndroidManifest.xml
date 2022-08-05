@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gongchaek.gongchaek">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gongchaek"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".feature.profile.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.detailpage.DetailPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.detailpage.ManageBookActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.detailpage.ProfileActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.gongchaek.gongchaek.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".feature.upload.UploadHintActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name=".feature.upload.UploadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.tabchat.ChatRoomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.upload.UploadManualActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.notification.NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.setting.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.search.SearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.login.SetInterestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.login.LoginPhoneNumActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.login.ShowSecondTermActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.login.ShowThirdTermActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.login.ShowFirstTermActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.login.LoginInfoActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".feature.login.LoginAuthActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.login.LoginTermActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.onboarding.OnboardingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Gongchaek.OnboardingScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feature.main.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

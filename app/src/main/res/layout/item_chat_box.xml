@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_profile_default" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:letterSpacing="-0.01"
+            android:text="NAME"
+            android:textColor="#202021"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:text="CHATTING MESSAGE"
+            android:textColor="#1c1c1d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:letterSpacing="-0.009"
+            android:text="오전 HH:MM"
+            android:textColor="#8f969c"
+            android:textSize="12sp" />
+
+<!--        TODO: BadgeDrawable-->
+
+    </RelativeLayout>
+
+</LinearLayout>
