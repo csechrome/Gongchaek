@@ -8,7 +8,6 @@ import com.gongchaek.gongchaek.global.BaseFragment
 import com.gongchaek.gongchaek.util.ItemLibrary
 import com.gongchaek.gongchaek.R
 import com.gongchaek.gongchaek.databinding.FragmentMyTownLibraryBinding
-import com.gongchaek.gongchaek.feature.detailpage.DetailPageActivity
 import com.gongchaek.gongchaek.feature.profile.ProfileActivity
 
 
