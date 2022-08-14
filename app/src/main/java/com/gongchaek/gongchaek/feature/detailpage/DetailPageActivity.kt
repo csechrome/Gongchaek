@@ -1,12 +1,13 @@
 package com.gongchaek.gongchaek.feature.detailpage
 
+import android.content.Intent
 import android.os.Bundle
 import com.gongchaek.gongchaek.R
 import com.gongchaek.gongchaek.databinding.ActivityDetailPageBinding
-import com.gongchaek.gongchaek.feature.main.MainActivity
-import com.gongchaek.gongchaek.feature.profile.ProfileFragment
+import com.gongchaek.gongchaek.feature.profile.ProfileActivity
 import com.gongchaek.gongchaek.global.BaseActivity
 import com.gongchaek.gongchaek.util.showToast
+
 
 class DetailPageActivity : BaseActivity<ActivityDetailPageBinding>(ActivityDetailPageBinding::inflate) {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,12 +24,8 @@ class DetailPageActivity : BaseActivity<ActivityDetailPageBinding>(ActivityDetai
         }
 
         binding.btnProfile.setOnClickListener {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.layout_view, ProfileFragment())
-                .addToBackStack(null)
-                .commit()
+            startActivity(Intent(this, ProfileActivity::class.java))
         }
-
         binding.btnBack.setOnClickListener {
             onBackPressed()
         }

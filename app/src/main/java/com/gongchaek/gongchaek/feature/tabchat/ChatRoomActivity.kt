@@ -7,6 +7,7 @@ import androidx.core.widget.addTextChangedListener
 import com.gongchaek.gongchaek.R
 import com.gongchaek.gongchaek.databinding.ActivityChatRoomBinding
 import com.gongchaek.gongchaek.global.BaseActivity
+import com.gongchaek.gongchaek.util.showToast
 import com.google.firebase.database.FirebaseDatabase
 import java.time.LocalDateTime
 
@@ -17,6 +18,8 @@ class ChatRoomActivity : BaseActivity<ActivityChatRoomBinding>(ActivityChatRoomB
         super.onCreate(savedInstanceState)
 
         val nickname = pref.getString("nickname", "null")
+        val room = pref.getString("room", "null") // TODO: 리사이클러 선택 시에 room 정보 저장
+
         val db = FirebaseDatabase.getInstance()
         val ref = db.reference
 
@@ -30,20 +33,20 @@ class ChatRoomActivity : BaseActivity<ActivityChatRoomBinding>(ActivityChatRoomB
             }
         }
 
+        // 메세지 전송
         binding.btnSend.setOnClickListener {
-            // TODO: 전송 로직
             val data = hashMapOf(
                 "nickname" to nickname,
                 "message" to binding.etMessage.text.toString(),
                 "time" to LocalDateTime.now()
             )
-            // Firestore에 기록
-//            db.collection("Chat").add(data)
-//                .addOnSuccessListener {
-//                    binding.etMessage.text.clear()
-//                }.addOnFailureListener {
-//                    showToast("메세지를 전송하는 데 실패했어요")
-//                }
+
+            ref.child("chat").child(room).setValue(data)
+                .addOnSuccessListener {
+                    binding.etMessage.text.clear()
+                }.addOnFailureListener {
+                    showToast("메세지를 전송하는 데 실패했어요")
+                }
         }
 
         binding.btnState.setOnClickListener {

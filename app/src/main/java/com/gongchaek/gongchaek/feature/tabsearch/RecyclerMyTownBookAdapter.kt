@@ -14,36 +14,34 @@ import com.gongchaek.gongchaek.util.ItemBookNormal
 class RecyclerMyTownBookAdapter(private val items: ArrayList<ItemBookNormal>) :
     RecyclerView.Adapter<RecyclerMyTownBookAdapter.ViewHolder>() {
 
-    private var context: Context? = null
-
     override fun getItemCount(): Int = items.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         val item = items[position]
-        val listener = View.OnClickListener {
-            this.context!!.startActivity(Intent(this.context, DetailPageActivity::class.java))
-        }
         holder.apply {
-            bind(listener, item)
+            bind(item)
             itemView.tag = item
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemBookNormalBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        this.context = parent.context
         return ViewHolder(binding)
     }
 
-    class ViewHolder(private val binding: ItemBookNormalBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(listener: View.OnClickListener, item: ItemBookNormal) {
+    var onItemClick: ((ItemBookNormal) -> Unit)? = null
+
+    inner class ViewHolder(private val binding: ItemBookNormalBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(item: ItemBookNormal) {
             binding.title.text = item.title
             binding.cover.setImageDrawable(item.cover)
             binding.location.text = item.location
             binding.price.text = item.price
             binding.term.text = item.term
-            binding.root.setOnClickListener(listener)
+            binding.root.setOnClickListener {
+                onItemClick?.invoke(item)
+            }
         }
     }
 }

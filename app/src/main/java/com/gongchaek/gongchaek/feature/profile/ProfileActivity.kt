@@ -9,9 +9,7 @@ import com.gongchaek.gongchaek.global.BaseActivity
 import com.gongchaek.gongchaek.util.hideKeyboard
 import com.gongchaek.gongchaek.util.showKeyboard
 
-
 class ProfileActivity : BaseActivity<ActivityProfileBinding>(ActivityProfileBinding::inflate) {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -40,6 +38,10 @@ class ProfileActivity : BaseActivity<ActivityProfileBinding>(ActivityProfileBind
             }
 
             handled
+        }
+
+        binding.btnBack.setOnClickListener {
+            onBackPressed()
         }
     }
 }

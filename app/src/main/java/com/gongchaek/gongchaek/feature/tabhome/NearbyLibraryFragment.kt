@@ -1,11 +1,15 @@
 package com.gongchaek.gongchaek.feature.tabhome
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.gongchaek.gongchaek.R
 import com.gongchaek.gongchaek.databinding.FragmentNearbyLibraryBinding
+import com.gongchaek.gongchaek.feature.detailpage.DetailPageActivity
+import com.gongchaek.gongchaek.feature.profile.ProfileActivity
+import com.gongchaek.gongchaek.feature.tabsearch.RecyclerMyTownBookAdapter
 import com.gongchaek.gongchaek.global.BaseFragment
 import com.gongchaek.gongchaek.util.ItemLibrary
 
@@ -33,6 +37,10 @@ class NearbyLibraryFragment : BaseFragment<FragmentNearbyLibraryBinding>(Fragmen
             R.drawable._test
         )!!, "안녕하세요", "북한산로 2", "20"))
 
-        binding.listNearbyLibrary.adapter = RecyclerNearbyLibraryAdapter(libraryList)
+        val adapter = RecyclerNearbyLibraryAdapter(libraryList)
+        adapter.onItemClick = {
+            startActivity(Intent(requireContext(), ProfileActivity::class.java))
+        }
+        binding.listNearbyLibrary.adapter = adapter
     }
 }

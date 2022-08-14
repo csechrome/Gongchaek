@@ -8,6 +8,7 @@ import android.view.inputmethod.EditorInfo
 import com.gongchaek.gongchaek.R
 import com.gongchaek.gongchaek.global.BaseActivity
 import com.gongchaek.gongchaek.databinding.ActivitySearchBinding
+import com.gongchaek.gongchaek.feature.main.MainActivity
 import com.gongchaek.gongchaek.util.hideKeyboard
 import com.gongchaek.gongchaek.util.setDisabled
 import com.gongchaek.gongchaek.util.setEnabled
@@ -26,7 +27,7 @@ class SearchActivity : BaseActivity<ActivitySearchBinding>(ActivitySearchBinding
         binding.etSearch.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-//                phoneBookListAdapter.getFilter().filter(p0) TODO: 검색
+//                phoneBookListAdapter.getFilter().filter(p0) TODO: 검색 ?
             }
             override fun afterTextChanged(p0: Editable?) {}
         })

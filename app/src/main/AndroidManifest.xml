@@ -24,15 +24,6 @@
         <activity
             android:name=".feature.profile.ProfileActivity"
             android:exported="true" />
-        <activity
-            android:name=".feature.detailpage.DetailPageActivity"
-            android:exported="true" />
-        <activity
-            android:name=".feature.detailpage.ManageBookActivity"
-            android:exported="true" />
-        <activity
-            android:name=".feature.detailpage.ProfileActivity"
-            android:exported="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -44,6 +35,12 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
+        <activity
+            android:name=".feature.detailpage.DetailPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".feature.detailpage.ManageBookActivity"
+            android:exported="true" />
         <activity
             android:name=".feature.upload.UploadHintActivity"
             android:exported="true"

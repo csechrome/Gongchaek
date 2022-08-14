@@ -5,7 +5,6 @@ import android.view.View
 import android.widget.ImageView
 import com.gongchaek.gongchaek.*
 import com.gongchaek.gongchaek.databinding.ActivityMainBinding
-import com.gongchaek.gongchaek.feature.profile.ProfileFragment
 import com.gongchaek.gongchaek.feature.tabchat.TabChatFragment
 import com.gongchaek.gongchaek.feature.tabhome.TabHomeFragment
 import com.gongchaek.gongchaek.feature.tabmypage.TabMyPageFragment
@@ -31,7 +30,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         super.onCreate(savedInstanceState)
 //        initView()
 
-        supportFragmentManager.beginTransaction().replace(R.id.layout_view, TabHomeFragment()).commit()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.layout_view, TabHomeFragment())
+            .commit()
 
         val user = Firebase.auth.currentUser
         if (user == null) {

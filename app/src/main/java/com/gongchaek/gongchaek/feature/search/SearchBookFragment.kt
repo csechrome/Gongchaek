@@ -1,10 +1,12 @@
 package com.gongchaek.gongchaek.feature.search
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
 import com.gongchaek.gongchaek.R
 import com.gongchaek.gongchaek.databinding.FragmentSearchBookBinding
+import com.gongchaek.gongchaek.feature.detailpage.DetailPageActivity
 import com.gongchaek.gongchaek.feature.tabsearch.RecyclerMyTownBookAdapter
 import com.gongchaek.gongchaek.global.BaseFragment
 import com.gongchaek.gongchaek.util.ItemBookNormal
@@ -27,6 +29,10 @@ class SearchBookFragment : BaseFragment<FragmentSearchBookBinding>(FragmentSearc
             R.drawable._test
         )!!, "북한산로 2", "1,000원", "2주"))
 
-        binding.listSearchBook.adapter = RecyclerMyTownBookAdapter(bookNormalList)
+        val adapter = RecyclerMyTownBookAdapter(bookNormalList)
+        adapter.onItemClick = {
+            startActivity(Intent(requireContext(), DetailPageActivity::class.java))
+        }
+        binding.listSearchBook.adapter = adapter
     }
 }
