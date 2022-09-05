@@ -9,6 +9,7 @@
     <string name="upload_manual_2">평소에 읽는 책들을 바탕으로\n취향에 딱 맞는 책을 추천해드려요.</string>
     <string name="upload_hint_0">책장을 한 번에 스캔할 수 있어요.\n<b>한 장에 7~10권 정도가 적당해요.</b></string>
     <string name="upload_hint_1"><b>책 표지</b>를 찍어서\n등록할 수도 있어요!</string>
+    <string name="borrow_main"><b>희망하는 대여 방식</b>을 선택해주세요.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
